@@ -43,19 +43,19 @@ export default function Home() {
 
           <div className="flex justify-center mb-10 ...">
             <div className="flex-1 w-20 p-2 ...">
-              <a target="_blank" href="https://www.facebook.com/jarno.bakker.520"><FontAwesomeIcon icon={['fab', 'facebook']} style={{ color: "#4267B2" }}/></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/jarno.bakker.520"><FontAwesomeIcon icon={['fab', 'facebook']} style={{ color: "#4267B2" }}/></a>
             </div>
             <div className="flex-1 w-20 p-2 ...">
-            <a target="_blank" href="https://github.com/Jarno123"><FontAwesomeIcon icon={['fab', 'github']} style={{ color: "#333" }}/></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Jarno123"><FontAwesomeIcon icon={['fab', 'github']} style={{ color: "#333" }}/></a>
             </div>
             <div className="flex-1 w-20 p-2 ...">
-            <a target="_blank" href="https://www.linkedin.com/in/jarnob/"><FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: "#0077b5" }}/></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jarnob/"><FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: "#0077b5" }}/></a>
             </div>
             <div className="flex-1 w-20 p-2 ...">
             <button type="button" onClick={() => setShowModal(true)}><FontAwesomeIcon icon={faFileLines} style={{ width: '48px', color: "#F6725D" }}/></button>
             </div>
             <div className="flex-1 w-20 p-2 ...">
-              <a target="_blank" href="https://www.vedr.nl/"><img className="-ml-4 mt-1 h-35 w-35 rounded-full" src="https://vedr.nl/assets/img/favicon.png" alt="Vedr - Internetbureau in Zeeland"/></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.vedr.nl/"><img className="-ml-4 mt-1 h-35 w-35 rounded-full" src="https://vedr.nl/assets/img/favicon.png" alt="Vedr - Internetbureau in Zeeland"/></a>
             </div>
           </div>
 
