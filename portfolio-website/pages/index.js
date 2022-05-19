@@ -28,34 +28,34 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img class="inline-block h-48 w-48 rounded-full ring-2 ring-white mb-6" src="me.jpg" alt="Jarno Bakker"/>
+        <img className="inline-block h-48 w-48 rounded-full ring-2 ring-white mb-6" src="me.jpg" alt="Jarno Bakker"/>
 
-        <h2 class="text-4xl font-bold mb-5">
+        <h2 className="text-4xl font-bold mb-5">
           Hi, aangenaam!
         </h2>
-        <h1 class="text-2xl text-center mb-10">
+        <h1 className="text-2xl text-center mb-10">
           Mijn naam is Jarno Bakker en ik ben {getAge('2001-06-26')} jaar oud. <br/>
           Student Toegepaste Informatica op AP Hogeschool Antwerpen.
         </h1>
-        <h3 class="text-2xl text-center font-bold">
+        <h3 className="text-2xl text-center font-bold">
           Links
         </h3>
 
-          <div class="flex justify-center mb-10 ...">
-            <div class="flex-1 w-20 p-2 ...">
+          <div className="flex justify-center mb-10 ...">
+            <div className="flex-1 w-20 p-2 ...">
               <a target="_blank" href="https://www.facebook.com/jarno.bakker.520"><FontAwesomeIcon icon={['fab', 'facebook']} style={{ color: "#4267B2" }}/></a>
             </div>
-            <div class="flex-1 w-20 p-2 ...">
+            <div className="flex-1 w-20 p-2 ...">
             <a target="_blank" href="https://github.com/Jarno123"><FontAwesomeIcon icon={['fab', 'github']} style={{ color: "#333" }}/></a>
             </div>
-            <div class="flex-1 w-20 p-2 ...">
+            <div className="flex-1 w-20 p-2 ...">
             <a target="_blank" href="https://www.linkedin.com/in/jarnob/"><FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: "#0077b5" }}/></a>
             </div>
-            <div class="flex-1 w-20 p-2 ...">
+            <div className="flex-1 w-20 p-2 ...">
             <button type="button" onClick={() => setShowModal(true)}><FontAwesomeIcon icon={faFileLines} style={{ width: '48px', color: "#F6725D" }}/></button>
             </div>
-            <div class="flex-1 w-20 p-2 ...">
-              <a target="_blank" href="https://www.vedr.nl/"><img class="-ml-4 mt-1 h-35 w-35 rounded-full" src="https://vedr.nl/assets/img/favicon.png" alt="Vedr - Internetbureau in Zeeland"/></a>
+            <div className="flex-1 w-20 p-2 ...">
+              <a target="_blank" href="https://www.vedr.nl/"><img className="-ml-4 mt-1 h-35 w-35 rounded-full" src="https://vedr.nl/assets/img/favicon.png" alt="Vedr - Internetbureau in Zeeland"/></a>
             </div>
           </div>
 
