@@ -33,7 +33,7 @@ export default function Home() {
         <h2 class="text-4xl font-bold mb-5">
           Hi, aangenaam!
         </h2>
-        <h1 class="md:text-2xl sm:text-1xl text-center mb-10">
+        <h1 class="text-2xl text-center mb-10">
           Mijn naam is Jarno Bakker en ik ben {getAge('2001-06-26')} jaar oud. <br/>
           Student Toegepaste Informatica op AP Hogeschool Antwerpen.
         </h1>
@@ -58,6 +58,7 @@ export default function Home() {
               <a target="_blank" href="https://www.vedr.nl/"><img class="-ml-4 mt-1 h-35 w-35 rounded-full" src="https://vedr.nl/assets/img/favicon.png" alt="Vedr - Internetbureau in Zeeland"/></a>
             </div>
           </div>
+
 
       {showModal ? (
         <>
