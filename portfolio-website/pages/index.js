@@ -55,7 +55,7 @@ export default function Home() {
             <button type="button" onClick={() => setShowModal(true)}><FontAwesomeIcon icon={faFileLines} style={{ width: '48px', color: "#F6725D" }}/></button>
             </div>
             <div className="flex-1 w-20 p-2 ...">
-              <a target="_blank" rel="noopener noreferrer" href="https://www.vedr.nl/"><img className="-ml-4 mt-1 h-35 w-35 rounded-full" src="https://vedr.nl/assets/img/favicon.png" alt="Vedr - Internetbureau in Zeeland"/></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.vedr.nl/"><img className="-ml-4 mt-1 h-35 w-35 rounded-full" src="logo-VEDR-circel-zwart.png" alt="Vedr - Internetbureau in Zeeland"/></a>
             </div>
           </div>
 
