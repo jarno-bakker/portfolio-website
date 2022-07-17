@@ -22,7 +22,6 @@ export default function Home() {
         <title>Jarno Bakker</title>
         <meta name="description" content="Kom in contact met Jarno Bakker" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="/styles/global.css" rel="stylesheet" />
       </Head>
 
       <main className={styles.main}>
