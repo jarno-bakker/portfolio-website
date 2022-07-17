@@ -1,7 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React, { useEffect } from "react";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,14 +27,18 @@ export default function Home() {
 
       <main className={styles.main}>
         <img
-          className="inline-block h-48 w-48 rounded-full ring-2 ring-white mb-6"
+          className="transition border-8 border-transparent hover:border-blue-500 inline-block h-48 w-48 rounded-full ring-2 ring-white mb-6"
           src="me.jpg"
           alt="Jarno Bakker"
         />
 
         <div className="text-4xl font-bold flex mb-5">
           <h2 className="mr-2">Hi, </h2>
-          <Typical steps={["aangenaam!", 1000]} wrapper="h2" />
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("aangenaam!").start();
+            }}
+          />
         </div>
         <h1 className="text-2xl text-center mb-10">
           Mijn naam is Jarno Bakker en ik ben {getAge("2001-06-26")} jaar oud.{" "}
