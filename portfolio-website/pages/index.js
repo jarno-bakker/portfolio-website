@@ -7,7 +7,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
-import Robot from "../components/animations/robot";
+import Lottie from "lottie-react";
+import robot from "../public/robot-assistant.json";
+
 library.add(fab);
 
 export default function Home() {
@@ -27,14 +29,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div class="group h-48 w-48 mb-8">
+        <div className="group h-48 w-48 mb-8">
           <img
             className="inline-block rounded-full ring-2 ring-white group-hover:invisible"
             src="me.jpg"
             alt="Jarno Bakker"
           />
-          <div class="invisible group-hover:visible -ml-24 -mt-80">
-            <Robot />
+          <div className="invisible group-hover:visible -mt-48 scale-150">
+            <Lottie animationData={robot} loop={true} />
           </div>
         </div>
 
