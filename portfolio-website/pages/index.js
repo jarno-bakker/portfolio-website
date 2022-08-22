@@ -7,6 +7,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import Robot from "../components/animations/robot";
 library.add(fab);
 
 export default function Home() {
@@ -26,11 +27,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img
-          className="transition border-8 border-transparent hover:border-blue-500 inline-block h-48 w-48 rounded-full ring-2 ring-white mb-6"
-          src="me.jpg"
-          alt="Jarno Bakker"
-        />
+        <div class="group h-48 w-48 mb-8">
+          <img
+            className="inline-block rounded-full ring-2 ring-white group-hover:invisible"
+            src="me.jpg"
+            alt="Jarno Bakker"
+          />
+          <div class="invisible group-hover:visible -ml-24 -mt-80">
+            <Robot />
+          </div>
+        </div>
 
         <div className="text-4xl font-bold flex mb-5">
           <h2 className="mr-2">Hi, </h2>
@@ -46,7 +52,6 @@ export default function Home() {
           Student Toegepaste Informatica op AP Hogeschool Antwerpen.
         </h1>
         <h3 className="text-2xl text-center font-bold">Links</h3>
-
         <div className="flex justify-center mb-10 ...">
           <div className="transform transition duration-200 hover:scale-125 flex-1 w-20 p-2 ...">
             <a
