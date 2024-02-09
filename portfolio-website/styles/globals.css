@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+.love-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .love-counter {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.love-counter .flex-child {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  width: 120px;
+}
+
+@media (max-width: 600px) {
+    .love-counter .flex-child {
+        width: 200px;
+    }
+}
+
+.date-indicator {
+    font-weight: 700;
+}
+
+.date-counter-item {
+    font-size: 20px;
+}

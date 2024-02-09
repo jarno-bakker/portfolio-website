@@ -51,45 +51,36 @@ export default function Home() {
         <h1 className="text-2xl text-center mb-10">
           Mijn naam is Jarno Bakker en ik ben {getAge("2001-06-26")} jaar oud.{" "}
           <br />
-          Student Toegepaste Informatica op AP Hogeschool Antwerpen.
+          Software engineer bij Omoda.
         </h1>
         <h3 className="text-2xl text-center font-bold">Links</h3>
         <div className="flex justify-center mb-10 ...">
           <div className="transform transition duration-200 hover:scale-125 flex-1 w-20 p-2 ...">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/jarno.bakker.520"
-            >
               <FontAwesomeIcon
-                icon={["fab", "facebook"]}
+                icon={"fa-brands fa-square-facebook"}
                 style={{ color: "#4267B2" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/jarno.bakker.520"
               />
-            </a>
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Jarno123"
-            >
               <FontAwesomeIcon
-                icon={["fab", "github"]}
+                icon={"fa-brands fa-square-github"}
                 style={{ color: "#333" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Jarno123"
               />
-            </a>
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/jarnob/"
-            >
               <FontAwesomeIcon
-                icon={["fab", "linkedin"]}
+                icon="fa-brands fa-linkedin"
                 style={{ color: "#0077b5" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/jarnob/"
               />
-            </a>
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
             <button type="button" onClick={() => setShowModal(true)}>
@@ -100,17 +91,14 @@ export default function Home() {
             </button>
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.vedr.nl/"
-            >
               <img
                 className="-ml-4 mt-1 h-35 w-35 rounded-full"
                 src="logo-VEDR-circel-zwart.png"
                 alt="Vedr - Internetbureau in Zeeland"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.vedr.nl/"  
               />
-            </a>
           </div>
         </div>
 
