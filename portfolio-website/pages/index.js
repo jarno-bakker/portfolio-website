@@ -35,10 +35,9 @@ export default function Home() {
             className="inline-block rounded-full ring-2 ring-white group-hover:invisible"
             src="me.jpg"
             alt="Jarno Bakker"
-            onClick={() => navigation.navigate('love-you')}
           />
           <div className="invisible group-hover:visible -mt-48 scale-150">
-            <Lottie animationData={robot} loop={true} />
+            <Lottie animationData={robot} loop={true} onClick={() => navigation.navigate('love-you')}/>
           </div>
         </div>
 
