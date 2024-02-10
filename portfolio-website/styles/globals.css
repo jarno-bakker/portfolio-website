@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .love-counter {
         width: 100%;
         flex-direction: column;
@@ -25,9 +25,11 @@
   width: 120px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .love-counter .flex-child {
         width: 200px;
+        padding: 5px;
+        margin: 5px;
     }
 }
 
