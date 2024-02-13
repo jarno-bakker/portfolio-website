@@ -10,7 +10,7 @@ export default function LoveYou() {
       <Head>
         <title>Kim + Jarno</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/heart.png" />
       </Head>
 
       <main className={styles.main}>
