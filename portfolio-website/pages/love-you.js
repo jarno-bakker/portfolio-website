@@ -8,8 +8,8 @@ export default function LoveYou() {
   return (
     <div className={styles.container} style={{background: "#fddfe4"}}>
       <Head>
-        <title>Jarno Bakker</title>
-        <meta name="description" content="Kom in contact met Jarno Bakker" />
+        <title>Kim + Jarno</title>
+        <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
