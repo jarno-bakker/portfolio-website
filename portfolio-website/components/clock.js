@@ -105,7 +105,7 @@ export default function Clock() {
         const intervalId = setInterval(() => {
             
             let a = new Date(),
-            b = '2023-12-09T11:00:00.000Z',
+            b = '2023-12-09T00:00:00.000Z',
             result = elapsedTime(a, b);
                         
             setSeconds(result.seconds);
