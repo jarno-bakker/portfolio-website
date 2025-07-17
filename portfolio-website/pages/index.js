@@ -5,10 +5,14 @@ import Typewriter from "typewriter-effect";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareFacebook,
+  faSquareGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
-import Lottie from "lottie-react";
-import robot from "../public/robot-assistant.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 library.add(fab);
 
@@ -19,7 +23,7 @@ export default function Home() {
   }
 
   const [showModal, setShowModal] = React.useState(false);
-  const handleClick = () => console.log('ha');
+
 
   return (
     <div className={styles.container}>
@@ -32,13 +36,10 @@ export default function Home() {
       <main className={styles.main}>
         <div className="group h-48 w-48 mb-8">
           <img
-            className="inline-block rounded-full ring-2 ring-white group-hover:invisible"
+            className="inline-block rounded-full ring-2 ring-white"
             src="me.jpg"
             alt="Jarno Bakker"
           />
-          <div className="invisible group-hover:visible -mt-48 scale-150">
-            <Lottie animationData={robot} loop={true} onClick={() => navigation.navigate('love-you')}/>
-          </div>
         </div>
 
         <div className="text-4xl font-bold flex mb-5">
@@ -58,8 +59,9 @@ export default function Home() {
         <div className="flex justify-center mb-10 ...">
           <div className="transform transition duration-200 hover:scale-125 flex-1 w-20 p-2 ...">
               <FontAwesomeIcon
-                icon={"fa-brands fa-square-facebook"}
+                icon={faSquareFacebook}
                 style={{ color: "#4267B2" }}
+                size="4x"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/jarno.bakker.520"
@@ -67,8 +69,9 @@ export default function Home() {
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
               <FontAwesomeIcon
-                icon={"fa-brands fa-square-github"}
+                icon={faSquareGithub}
                 style={{ color: "#333" }}
+                size="4x"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/Jarno123"
@@ -76,8 +79,9 @@ export default function Home() {
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
               <FontAwesomeIcon
-                icon="fa-brands fa-linkedin"
+                icon={faLinkedin}
                 style={{ color: "#0077b5" }}
+                size="4x"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/jarnob/"
@@ -87,6 +91,7 @@ export default function Home() {
             <button type="button" onClick={() => setShowModal(true)}>
               <FontAwesomeIcon
                 icon={faFileLines}
+                size="4x"
                 style={{ width: "48px", color: "#F6725D" }}
               />
             </button>

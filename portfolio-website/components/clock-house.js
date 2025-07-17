@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function Clock() {
+export default function ClockHouse() {
     const [years, setYears] = useState(0);
     const [months, setMonths] = useState(0);
     const [days, setDays] = useState(0);
@@ -105,7 +105,7 @@ export default function Clock() {
         const intervalId = setInterval(() => {
             
             let a = new Date(),
-            b = '2023-12-09T00:00:00.000Z',
+            b = '2025-10-01T00:00:00.000Z',
             result = elapsedTime(a, b);
                         
             setSeconds(result.seconds);

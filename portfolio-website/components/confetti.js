@@ -11,12 +11,14 @@ export function confettiExplosion() {
   const anniversaryDate = new Date("2023-12-09");
   const birthdayKim = new Date("2004-12-02");
   const birthdayJarno = new Date("2001-06-26");
+  const moveInHouseDay = new Date("2025-10-01");
   const currentDate = new Date();
 
   if (
     dateEqualsDateAndMonth(currentDate, anniversaryDate) ||
     dateEqualsDateAndMonth(currentDate, birthdayKim) ||
-    dateEqualsDateAndMonth(currentDate, birthdayJarno)
+    dateEqualsDateAndMonth(currentDate, birthdayJarno) ||
+    dateEqualsDateAndMonth(currentDate, moveInHouseDay)
   ) {
     confetti({
       particleCount: 80,
@@ -29,8 +31,9 @@ export function confettiExplosion() {
 export function confettiAnimation() {
   const currentDate = new Date();
   const anniversaryDate = new Date("2023-12-09");
+  const moveInHouseDay = new Date("2025-10-01");
 
-  if (!dateEqualsDateAndMonth(currentDate, anniversaryDate)) {
+  if (!dateEqualsDateAndMonth(currentDate, anniversaryDate) && !dateEqualsDateAndMonth(currentDate, moveInHouseDay)) {
     return;
   }
   const duration = 8 * 1000,
