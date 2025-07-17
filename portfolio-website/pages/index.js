@@ -10,7 +10,6 @@ import {
   faSquareGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -22,7 +21,9 @@ export default function Home() {
     return Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365); // convert to years.
   }
 
-  const [showModal, setShowModal] = React.useState(false);
+  const handleClick = (destination) => {
+    window.open(destination, '_blank', 'noopener,noreferrer')
+  };
 
 
   return (
@@ -62,9 +63,7 @@ export default function Home() {
                 icon={faSquareFacebook}
                 style={{ color: "#4267B2" }}
                 size="4x"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/jarno.bakker.520"
+                onClick={() => handleClick("https://www.facebook.com/jarno.bakker.520")}
               />
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
@@ -72,9 +71,7 @@ export default function Home() {
                 icon={faSquareGithub}
                 style={{ color: "#333" }}
                 size="4x"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/Jarno123"
+                onClick={() => handleClick("https://github.com/Jarno123")}
               />
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
@@ -82,70 +79,18 @@ export default function Home() {
                 icon={faLinkedin}
                 style={{ color: "#0077b5" }}
                 size="4x"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/jarnob/"
+                onClick={() => handleClick("https://www.linkedin.com/in/jarnob/")}
               />
           </div>
-          <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
-            <button type="button" onClick={() => setShowModal(true)}>
-              <FontAwesomeIcon
-                icon={faFileLines}
-                size="4x"
-                style={{ width: "48px", color: "#F6725D" }}
-              />
-            </button>
-          </div>
-          <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
+          <div className="transform transition duration-200 hover:scale-125  flex-1 w-16 p-2 ...">
               <img
-                className="-ml-4 mt-1 h-35 w-35 rounded-full"
+                className="mt-1 h-35 w-35 rounded-full"
                 src="logo-VEDR-circel-zwart.png"
                 alt="Vedr - Internetbureau in Zeeland"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.vedr.nl/"  
+                onClick={() => handleClick("https://www.vedr.nl/")}
               />
           </div>
         </div>
-
-        {showModal ? (
-          <>
-            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 focus:outline-none">
-              <div className="relative my-6 mx-auto w-screen">
-                {/*content*/}
-                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                  {/*body*/}
-                  <div className="relative p-6 flex-auto h-screen">
-                    <object
-                      data="CV-2022.pdf"
-                      type="application/pdf"
-                      width="100%"
-                      height="100%"
-                    >
-                      <p>
-                        Alternative text - include a link{" "}
-                        <a href="http://africau.edu/images/default/sample.pdf">
-                          to the PDF!
-                        </a>
-                      </p>
-                    </object>
-                  </div>
-                  {/*footer*/}
-                  <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                    <button
-                      className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-20 ease-linear transition-all duration-150"
-                      type="button"
-                      onClick={() => setShowModal(false)}
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-          </>
-        ) : null}
       </main>
     </div>
   );

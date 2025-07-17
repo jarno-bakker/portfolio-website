@@ -27,10 +27,10 @@ export default function JarnoEnKim() {
             <div className="flex items-center space-x-4 rounded-2xl p-2 sm:p-4">
               <button
                 type="button"
-                className={`w-14 h-14 sm:w-20 sm:h-20 cursor-pointer focus:outline-none focus:ring-4 focus:ring-opacity-50 transition-all duration-700 transform hover:scale-110 shadow-lg flex items-center justify-center text-2xl sm:text-4xl rounded-full ${
+                className={`w-14 h-14 sm:w-20 sm:h-20 cursor-pointer transition-all duration-700 transform hover:scale-110 shadow-lg flex items-center justify-center text-2xl sm:text-4xl rounded-full ${
                   showLoveCounter
-                    ? "bg-gradient-to-br from-blue-400 to-green-500 focus:ring-blue-300"
-                    : "bg-gradient-to-br from-pink-400 to-red-500 focus:ring-pink-300"
+                    ? "bg-[#FFF4E4]"
+                    : "bg-[#fddfe4]"
                 } ${
                   showLoveCounter
                     ? "rotate-0 scale-110"
