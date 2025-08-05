@@ -71,7 +71,7 @@ export default function Home() {
                 icon={faSquareGithub}
                 style={{ color: "#333" }}
                 size="4x"
-                onClick={() => handleClick("https://github.com/Jarno123")}
+                onClick={() => handleClick("https://github.com/Jarnob123")}
               />
           </div>
           <div className="transform transition duration-200 hover:scale-125  flex-1 w-20 p-2 ...">
